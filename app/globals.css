@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --nvidia-green: #76b900;
+  --nvidia-dark: #001202;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  user-select: none;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #050807;
+}
+
+/* Neon glow utilities */
+.glow-green {
+  text-shadow: 0 0 10px rgba(118, 185, 0, 0.8), 0 0 20px rgba(118, 185, 0, 0.4);
+}
+
+.box-glow-green {
+  box-shadow: 0 0 15px rgba(118, 185, 0, 0.5), inset 0 0 10px rgba(118, 185, 0, 0.2);
+}
+
+.box-glow-gold {
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.7), inset 0 0 12px rgba(255, 215, 0, 0.3);
+}
+
+.box-glow-cyan {
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.7), inset 0 0 12px rgba(0, 240, 255, 0.3);
+}
+
+.box-glow-red {
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.7), inset 0 0 12px rgba(239, 68, 68, 0.3);
+}
+
+/* Scanline effect */
+.scanlines {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.25) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.03),
+    rgba(0, 255, 0, 0.01),
+    rgba(0, 0, 255, 0.03)
+  );
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+}
+
